@@ -10,6 +10,6 @@
 # Package stage
 #
 FROM openjdk:17-jdk-slim
-COPY --from=build target/portfolio-1.0-SNAPSHOT.jar /src/main/resources/aws/app.jar
+COPY target/portfolio-1.0-SNAPSHOT.jar /src/main/resources/aws/app.jar
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/src/main/resources/aws/app.jar"]
