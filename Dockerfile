@@ -4,7 +4,7 @@
 FROM maven:3.6-openjdk-17 AS build
 COPY src src
 COPY pom.xml .
-RUN mvn -f pom.xml clean package
+RUN mvn -f mvn clean package -Pproduction
 
 #
 # Package stage
