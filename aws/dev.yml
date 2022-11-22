@@ -27,6 +27,6 @@ spec:
     spec:
       containers:
         - name: hello-world
-          image: attilamurvai/portfolio:11
+          image: attilamurvai/portfolio:12
           ports:
             - containerPort: 8080

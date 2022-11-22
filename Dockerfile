@@ -2,6 +2,7 @@
 # Build stage
 #
 FROM maven:3.6-openjdk-17 AS builder
+COPY ./frontend frontend/
 COPY ./src src/
 COPY ./pom.xml pom.xml
 RUN mvn clean package -Pproduction
