@@ -2,8 +2,8 @@
 # Build stage
 #
 FROM maven:3.6-openjdk-17 AS builder
-COPY src src
-COPY pom.xml .
+COPY ./src src/
+COPY ./pom.xml pom.xml
 RUN mvn -f clean package -Pproduction
 
 #
